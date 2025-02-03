@@ -1,0 +1,26 @@
+[project]
+name = "redislock-py"
+version = "0.1.0"
+description = "Simple redis lock context manager"
+readme = "README.md"
+authors = [
+    { name = "legout", email = "ligno.blades@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "loguru>=0.7.3",
+    "redis>=5.2.1",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/legout/redislock-py"
+"Bug Tracker" = "https://github.com/legout/redislock-py/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
