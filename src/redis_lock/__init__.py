@@ -1,8 +1,9 @@
 # Description: Redis-based Delta Lake locking
-from contextlib import contextmanager
-from redis import StrictRedis, Redis
-from loguru import logger
 import time
+from contextlib import contextmanager
+
+from loguru import logger
+from redis import Redis, StrictRedis
 
 
 class DeltaLockError(Exception):
